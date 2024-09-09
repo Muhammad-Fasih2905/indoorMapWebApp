@@ -8,8 +8,6 @@ export interface ButtonProps {
     disabled?: boolean;
     type?: "button" | "submit" | "reset";
 }
-
-
 export interface TextInputProps {
     label?: string;
     placeholder: string;
@@ -34,7 +32,6 @@ export interface BuildingItemProps {
     id: number;
     onDelete: (id: number) => void;
 }
-
 export interface BuildingsModalProps {
     buildings: Building[];
     onAddBuilding: () => void;

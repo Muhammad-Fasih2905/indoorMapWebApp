@@ -59,6 +59,6 @@ function heuristic(a, b) {
     if (grid[x][y + 1]) neighbors.push(grid[x][y + 1]);
     return neighbors;
   }
-  
+
   export { aStar };
   
