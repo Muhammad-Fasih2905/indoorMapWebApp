@@ -32,8 +32,7 @@ type FloorData = {
     image: string;
 };
 interface FloorsProps {
-    floors: FloorData[];
-    setAddress: (address: string) => void;
+    setAddress?: (address: string) => void;
 }
 const Floor: React.FC<FloorsProps> = ({ setAddress }) => {
     // const [selectedFloor, setSelectedFloor] = useState<string | null>(null);
@@ -194,7 +193,7 @@ const Floor: React.FC<FloorsProps> = ({ setAddress }) => {
     const handleCross = () => {
         dispatch(resetBuilding());
         setCrossBtn(!crossBtn);
-        setAddress('')
+        setAddress?.('');
     };
 
     const hanldeAllReset2 = () => {

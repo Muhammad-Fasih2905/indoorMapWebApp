@@ -58,7 +58,6 @@ const MapWorkComponent: React.FC<MapComponentProps> = ({
         setIsModalOpen(true);
     }
 
-    const floors = buildingIdData?.get_floors ?? []
     return (
         <div className='w-full h-full ps-17'>
             {buildingIdData ? null :
@@ -121,7 +120,7 @@ const MapWorkComponent: React.FC<MapComponentProps> = ({
 
             {buildingIdData?.id ? (
                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 justify-between items-center w-full h-[90vh]">
-                    <Floor floors={floors} setAddress={setAddress} />
+                    <Floor setAddress={setAddress} />
                 </div>
             ) : null}
         </div>

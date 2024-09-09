@@ -89,7 +89,7 @@ function Casino() {
                     }
                     {buildingIdData && floors?.length !== 0 ?
                         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 justify-between items-center w-full h-[80vh]">
-                            <Floor floors={floors} />
+                            <Floor />
                         </div>
                         : null}
 
