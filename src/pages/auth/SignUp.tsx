@@ -12,7 +12,6 @@ const SignUp: React.FC = () => {
     const [privacyAccepted, setPrivacyAccepted] = useState(false);
     const [newsletterSubscribed, setNewsletterSubscribed] = useState(false);
     const navigate = useNavigate()
-
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log('Form submitted', { email, password, useCase });
@@ -20,7 +19,6 @@ const SignUp: React.FC = () => {
     const handleLoginNavigate = () => {
         navigate('/')
     }
-
     return (
         <div className="min-h-screen bg-[#0D1B3E] flex items-center justify-center p-4">
             <div className="w-full max-w-7xl flex flex-col lg:flex-row">
@@ -58,7 +56,6 @@ const SignUp: React.FC = () => {
                         </span>
                     </footer>
                 </div>
-
                 {/* Right side */}
                 <div className="lg:w-1/2">
                     <Card className="bg-white shadow-lg rounded-lg">
